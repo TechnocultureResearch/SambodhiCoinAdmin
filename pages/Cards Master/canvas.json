@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Page1",
-    "slug": "page1",
+    "name": "Cards Master",
+    "slug": "cards-master",
     "layouts": [
       {
         "viewMode": false,
@@ -101,7 +101,7 @@
                           "key": "fontFamily"
                         }
                       ],
-                      "text": "Cards",
+                      "text": "Cards Master [CRITICAL PAGE]",
                       "labelTextSize": "0.875rem",
                       "rightColumn": 54,
                       "textAlign": "LEFT",
@@ -1170,7 +1170,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Page1_SelectQuery",
+              "id": "Cards Master_SelectQuery",
               "name": "SelectQuery",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -1186,14 +1186,15 @@
           ]
         ],
         "validOnPageLoadActions": true,
-        "id": "Page1",
+        "id": "Cards Master",
         "deleted": false,
         "policies": [],
         "userPermissions": []
       }
     ],
     "userPermissions": [],
-    "policies": []
+    "policies": [],
+    "isHidden": false
   },
   "deleted": false,
   "gitSyncId": "632369dff51aa4275afd5f4a_632369dff51aa4275afd5f4c"

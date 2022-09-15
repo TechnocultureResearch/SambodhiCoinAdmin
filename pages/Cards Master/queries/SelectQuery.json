@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
+    "pageId": "Cards Master",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -41,7 +41,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_SelectQuery",
+  "id": "Cards Master_SelectQuery",
   "deleted": false,
   "gitSyncId": "632369dff51aa4275afd5f4a_63236a3ea317cf5cf2804f7f"
 }
