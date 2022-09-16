@@ -99,12 +99,9 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "fontFamily"
-                        },
-                        {
-                          "key": "text"
                         }
                       ],
-                      "text": "Cards Master ({{CountQuery.data[0][\"count\"]}} cards)",
+                      "text": "Cards Master",
                       "labelTextSize": "0.875rem",
                       "rightColumn": 54,
                       "textAlign": "LEFT",
@@ -1182,16 +1179,6 @@
                 "(data_table.pageNo - 1) * data_table.pageSize",
                 "data_table.sortOrder.column || 'card_number'"
               ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "CardsMaster_CountQuery",
-              "name": "CountQuery",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ]
