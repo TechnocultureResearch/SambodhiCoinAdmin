@@ -11,6 +11,10 @@
     {
       "id": "Users",
       "isDefault": false
+    },
+    {
+      "id": "TouchPoints",
+      "isDefault": false
     }
   ],
   "viewMode": false,
