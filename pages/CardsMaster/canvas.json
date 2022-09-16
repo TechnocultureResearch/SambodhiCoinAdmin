@@ -28,7 +28,7 @@
           "children": [
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "widgetName": "Container1",
+              "widgetName": "Cards_Table",
               "borderColor": "#fff",
               "dynamicPropertyPathList": [
                 {
@@ -80,7 +80,7 @@
                   "children": [
                     {
                       "boxShadow": "none",
-                      "widgetName": "Text16",
+                      "widgetName": "title",
                       "dynamicPropertyPathList": [
                         {
                           "key": "fontSize"
@@ -930,7 +930,7 @@
                       "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.card_code))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Text Input",
-                      "sourceData": "%4000 2223 7081 6001?;4000=2223=7081=6008?",
+                      "sourceData": "%4000 2223 7081 6001?;4000=2223=7081=6001?",
                       "isCustomField": false,
                       "accessor": "card_code",
                       "identifier": "card_code",
@@ -952,7 +952,7 @@
                   "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                   "fieldType": "Object",
                   "sourceData": {
-                    "card_code": "%4000 2223 7081 6001?;4000=2223=7081=6008?"
+                    "card_code": "%4000 2223 7081 6001?;4000=2223=7081=6001?"
                   },
                   "isCustomField": false,
                   "accessor": "__root_schema__",
@@ -1004,7 +1004,7 @@
               "iconSVG": "/static/media/icon.6bacf7df.svg",
               "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
               "topRow": 57,
-              "bottomRow": 84,
+              "bottomRow": 80,
               "fieldLimitExceeded": false,
               "parentRowSpace": 10,
               "title": "Update Card Code (for {{data_table.selectedRow.card_number}})",

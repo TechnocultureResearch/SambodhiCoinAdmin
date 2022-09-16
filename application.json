@@ -2,6 +2,10 @@
   "pages": [
     {
       "id": "CardsMaster",
+      "isDefault": false
+    },
+    {
+      "id": "Auth",
       "isDefault": true
     }
   ],
@@ -11,6 +15,9 @@
   "color": "#D9E7FF",
   "icon": "bitcoin",
   "unpublishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "publishedAppLayout": {
     "type": "DESKTOP"
   },
   "evaluationVersion": 2,
