@@ -193,7 +193,7 @@
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                       "onSort": "{{SelectQuery.run()}}",
-                      "isVisibleDownload": true,
+                      "isVisibleDownload": false,
                       "iconSVG": "/static/media/icon.db8a9cbd.svg",
                       "topRow": 5,
                       "isSortable": true,
@@ -232,7 +232,7 @@
                       "leftColumn": 0,
                       "delimiter": ",",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisibleFilters": true,
+                      "isVisibleFilters": false,
                       "isVisible": "true",
                       "enableClientSideSearch": true,
                       "version": 3,
@@ -261,7 +261,9 @@
                       "columnSizeMap": {
                         "task": 245,
                         "step": 62,
-                        "status": 75
+                        "status": 75,
+                        "card_number": 230,
+                        "card_code": 370
                       },
                       "widgetName": "data_table",
                       "defaultPageSize": 0,
@@ -930,7 +932,7 @@
                       "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.card_code))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Text Input",
-                      "sourceData": "%4000 2223 7081 6001?;4000=2223=7081=6001?",
+                      "sourceData": "%4000 2223 7081 6001?;4000=2223=7081=6009?",
                       "isCustomField": false,
                       "accessor": "card_code",
                       "identifier": "card_code",
@@ -952,7 +954,7 @@
                   "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                   "fieldType": "Object",
                   "sourceData": {
-                    "card_code": "%4000 2223 7081 6001?;4000=2223=7081=6001?"
+                    "card_code": "%4000 2223 7081 6001?;4000=2223=7081=6009?"
                   },
                   "isCustomField": false,
                   "accessor": "__root_schema__",
@@ -975,9 +977,10 @@
               "submitButtonStyles": {
                 "boxShadow": "none",
                 "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                "buttonColor": "#dc2626",
                 "buttonVariant": "PRIMARY",
-                "iconAlign": "left"
+                "iconAlign": "left",
+                "iconName": "warning-sign"
               },
               "borderColor": "#fff",
               "dynamicPropertyPathList": [
@@ -1038,9 +1041,6 @@
                   "key": "title"
                 },
                 {
-                  "key": "resetButtonStyles.buttonColor"
-                },
-                {
                   "key": "borderRadius"
                 },
                 {
@@ -1050,9 +1050,6 @@
                   "key": "submitButtonStyles.borderRadius"
                 },
                 {
-                  "key": "submitButtonStyles.buttonColor"
-                },
-                {
                   "key": "schema.__root_schema__.children.card_code.defaultValue"
                 },
                 {
@@ -1060,6 +1057,9 @@
                 },
                 {
                   "key": "schema.__root_schema__.children.card_code.accentColor"
+                },
+                {
+                  "key": "resetButtonStyles.buttonColor"
                 }
               ],
               "borderWidth": "0",
