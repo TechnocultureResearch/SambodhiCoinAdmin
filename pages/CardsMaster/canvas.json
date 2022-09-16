@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Cards Master",
-    "slug": "cards-master",
+    "name": "CardsMaster",
+    "slug": "cardsmaster",
     "layouts": [
       {
         "viewMode": false,
@@ -39,7 +39,7 @@
                 }
               ],
               "topRow": 0,
-              "bottomRow": 86,
+              "bottomRow": 57,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "parentColumnSpace": 19.75,
@@ -405,7 +405,7 @@
               "borderWidth": "0",
               "labelTextSize": "0.875rem",
               "backgroundColor": "#FFFFFF",
-              "rightColumn": 39,
+              "rightColumn": 64,
               "widgetId": "mvubsemxfo",
               "containerStyle": "card",
               "isVisible": "true",
@@ -930,7 +930,7 @@
                       "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.card_code))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Text Input",
-                      "sourceData": "%4000 2223 7081 6001?;4000=2223=7081=6001?",
+                      "sourceData": "%4000 2223 7081 6001?;4000=2223=7081=6008?",
                       "isCustomField": false,
                       "accessor": "card_code",
                       "identifier": "card_code",
@@ -952,7 +952,7 @@
                   "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                   "fieldType": "Object",
                   "sourceData": {
-                    "card_code": "%4000 2223 7081 6001?;4000=2223=7081=6001?"
+                    "card_code": "%4000 2223 7081 6001?;4000=2223=7081=6008?"
                   },
                   "isCustomField": false,
                   "accessor": "__root_schema__",
@@ -1003,11 +1003,11 @@
               "displayName": "JSON Form",
               "iconSVG": "/static/media/icon.6bacf7df.svg",
               "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-              "topRow": 0,
-              "bottomRow": 27,
+              "topRow": 57,
+              "bottomRow": 84,
               "fieldLimitExceeded": false,
               "parentRowSpace": 10,
-              "title": "Update Row card_number: {{data_table.selectedRow.card_number}}",
+              "title": "Update Card Code (for {{data_table.selectedRow.card_number}})",
               "type": "JSON_FORM_WIDGET",
               "hideCard": false,
               "animateLoading": true,
@@ -1017,7 +1017,7 @@
                   "key": "onSubmit"
                 }
               ],
-              "leftColumn": 39,
+              "leftColumn": 0,
               "dynamicBindingPathList": [
                 {
                   "key": "schema.__root_schema__.defaultValue"
@@ -1171,7 +1171,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Cards Master_SelectQuery",
+              "id": "CardsMaster_SelectQuery",
               "name": "SelectQuery",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -1187,7 +1187,7 @@
           ],
           [
             {
-              "id": "Cards Master_CountQuery",
+              "id": "CardsMaster_CountQuery",
               "name": "CountQuery",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -1197,7 +1197,7 @@
           ]
         ],
         "validOnPageLoadActions": true,
-        "id": "Cards Master",
+        "id": "CardsMaster",
         "deleted": false,
         "policies": [],
         "userPermissions": []
