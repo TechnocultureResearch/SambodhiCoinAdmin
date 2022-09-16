@@ -7,6 +7,10 @@
     {
       "id": "Auth",
       "isDefault": true
+    },
+    {
+      "id": "Users",
+      "isDefault": false
     }
   ],
   "viewMode": false,
