@@ -15,6 +15,14 @@
     {
       "id": "TouchPoints",
       "isDefault": false
+    },
+    {
+      "id": "ActiveCards",
+      "isDefault": false
+    },
+    {
+      "id": "Transactions",
+      "isDefault": false
     }
   ],
   "viewMode": false,
